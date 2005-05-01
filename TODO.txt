@@ -1,0 +1,42 @@
+Bugs:
+
+(1) Fix the slope problem in partition.
+
+(2) Figure out what's going on with fwdmvEllipsePlot.  Boxplots don't look right.
+
+
+Improvements:
+
+(1) If the elements of the diagonal of the covariance matrix are all equal to 1 then label should be correlation.
+
+(2) In confirm.plot only show the units that change classification in the plot.  Make plot work better.
+
+
+New Features:
+
+(1) Make a function called pcscores.plot.fwdmv that plots the scores for each subset.
+
+(2) Make a forward screeplot where the user selects which steps to see.
+
+(3) Make a forward biplot where the user selects which steps to see.
+
+(4) Make a forward score vs score plot where the user selects which steps to see (pg 272).
+
+(5) Make a function that does univariate boxplots and put outliers labels on alternating sides.
+
+(6) 3 row distances plot; see page 400
+
+(7) Add id capability to change and entry plots.
+
+
+For next version:
+
+(1) Zoom and row highlighting in the entry order plot.
+
+(2) redo the implementation of alpha and beta.
+
+Ask Brian:
+
+(1) How to make id instructions appear in Windows.
+
+(2) Can we use \link to link to files on the web.
