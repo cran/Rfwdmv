@@ -11,13 +11,13 @@
 void b_spline(x,X,y,Y,z,n)
 double *x,*X;
 double *y,*Y;
-long *n,*z;
+int *n,*z;
 {
 const int N=30;
 int i;
 int j;
 double t;
-long k=1;
+int k=1;
 double xa,xb,xc,xd;
 double ya,yb,yc,yd;
 double a3,a2,a1,a0;
@@ -50,12 +50,12 @@ double *X,*Out,*eps;     /* output vector containing number of outliers */
 double *x,*y;				/* points outside hull 90% */
 double *wx,*wy;				/* spline list of points */
 double *mx,*my;				/* median point*/
-long *nn,*ll,*mm;			/* counters */
+int *nn,*ll,*mm;			/* counters */
 {
 double xa,xb,xc,xd,xk;
 double ya,yb,yc,yd,yk;
 double den,r,s,dp,dp1,dp2;
-long n,j,k,kk;
+int n,j,k,kk;
 	k = 0;
 	kk = 0;
 	n = 0;

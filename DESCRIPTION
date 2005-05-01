@@ -1,5 +1,5 @@
 Package: Rfwdmv
-Version: 0.7
+Version: 0.71
 Date: 2005-05-01
 Title: Forward Search for Multivariate Data
 Author: Anthony Atkinson <A.C.Atkinson@lse.ac.uk>, \
@@ -7,7 +7,7 @@ Author: Anthony Atkinson <A.C.Atkinson@lse.ac.uk>, \
         Marco Riani <mriani@unipr.it>.
 Maintainer: Kjell Konis <konis@stats.ox.ac.uk>
 Depends: R (>= 1.8.0), MASS
-Description: description
+Description: Explore Multivariate Data with the Forward Search
 License: BSD
 URL: http://www.riani.it
-Packaged: Mon May 16 11:42:30 2005; konis
+Packaged: Thu May 19 14:05:11 2005; konis
