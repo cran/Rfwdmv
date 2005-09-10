@@ -1,8 +1,22 @@
 fwdmv <- function(X, groups = NULL, alpha = 0.6, beta = 0.75, bsb = ellipse.subset,
-                  balanced = TRUE, scaled = TRUE, constrained = TRUE)
+                  balanced = TRUE, scaled = TRUE, constrained = TRUE, monitor = "all")
 {
   data.name <- deparse(substitute(X))
   the.call <- match.call()
+
+  monitor.arg <- monitor
+  monitor <- logical(11)
+  names(monitor) <- c("cov", "determinant", "unit", "center", "max", "mth",
+                      "min", "mpo", "distance", "nearest", "misclassified")
+
+  if(casefold(monitor.arg) == "all")
+    monitor[1:11] <- TRUE
+
+  else
+    for(stat in monitor.arg) {
+      stat <- casefold(stat)
+      monitor[stat] <- TRUE
+    }
 
   if(class(X) == "fwdmv") {
     groups <- X$groups
@@ -12,10 +26,11 @@ fwdmv <- function(X, groups = NULL, alpha = 0.6, beta = 0.75, bsb = ellipse.subs
     X <- X$data
     dimnames(X) <- NULL
   }
-  
+
   else {
     if(is.null(groups)) {
-      ans <- fwdmv.init(X, bsb = bsb, scaled = scaled)
+      monitor <- (names(monitor)[1:9])[monitor[1:9]]
+      ans <- fwdmv.init(X, bsb = bsb, scaled = scaled, monitor = monitor)
       ans$call <- the.call
       ans$data.name <- data.name
       return(ans)
@@ -47,44 +62,56 @@ fwdmv <- function(X, groups = NULL, alpha = 0.6, beta = 0.75, bsb = ellipse.subs
   unassigned <- setdiff(1:n, unlist(groups))
   n.unassigned <- length(unassigned)
 
-  Cov <- list()
-  Determinant <- list()
-  Unit <- list()
-  Center <- list()
+  if(monitor["cov"])
+    Cov <- list()
+  if(monitor["determinant"])
+    Determinant <- list()
+  if(monitor["center"])
+    Center <- list()
+  if(monitor["unit"])
+    Unit <- list()
 
-  Max <- rep(as.double(NA), n-M+1)
-  Mth <- rep(as.double(NA), n-M+1)
-  Min <- rep(as.double(NA), n-M)
-  Mpo <- rep(as.double(NA), n-M)
+  if(monitor["max"])
+    Max <- rep(as.double(NA), n-M+1)
+  if(monitor["mth"])
+    Mth <- rep(as.double(NA), n-M+1)
+  if(monitor["min"])
+    Min <- rep(as.double(NA), n-M)
+  if(monitor["mpo"])
+    Mpo <- rep(as.double(NA), n-M)
 
   for(i in 1:n.groups) {
-    Center[[i]] <- matrix(0.0, n-M+1, p)
-    Cov[[i]] <- matrix(0.0, n-M+1, (p*(p+1))/2)
-    Determinant[[i]] <- double(n-M+1)
+    if(monitor["cov"])
+      Cov[[i]] <- matrix(0.0, n-M+1, (p*(p+1))/2)
+    if(monitor["determinant"])
+      Determinant[[i]] <- double(n-M+1)
+    if(monitor["center"])
+      Center[[i]] <- matrix(0.0, n-M+1, p)
   }
 
-  Distances <- matrix(0.0, n, n-M+1)
+  if(monitor["distance"])
+    Distances <- matrix(0.0, n, n-M+1)
+
+  if(monitor["misclassified"]) {
+    Nearest <- matrix(as.integer(0), n.unassigned, n-M+1)
+    dimnames(Nearest) <- list(unassigned, M:n)
+    Misclassified <- list()
+  }
+
   next.dist <- double(n.groups)
   names(next.dist) <- 1:n.groups
 
   distances <- matrix(0.0, n, n.groups)
   dimnames(distances) <- list(1:n, 1:n.groups)
 
-  Nearest <- matrix(as.integer(0), n.unassigned, n-M+1)
-  dimnames(Nearest) <- list(unassigned, M:n)
-  
-  Misclassified <- list()
-
   # Find initial subsets in each group. #
 
   if(is.function(bsb)) {
-
     tmp.fun <- bsb
     bsb <- list()
 
     for(i in 1:n.groups)
       bsb[[i]] <- groups[[i]][tmp.fun(X[groups[[i]], , drop = FALSE], n.bsb[i])]
-
   }
 
   # Main forward search loop. #
@@ -104,8 +131,10 @@ fwdmv <- function(X, groups = NULL, alpha = 0.6, beta = 0.75, bsb = ellipse.subs
 
       # Compute the covariance matrix and determinant for the group. #
 
-      determinant <- prod(diag(R))^2 / (n.bsb[[i]] - 1)^p
-      cov <- (t(R) %*% R) / (n.bsb[[i]] - 1)
+      if(monitor["determinant"])
+        determinant <- prod(diag(R))^2 / (n.bsb[[i]] - 1)^p
+      if(monitor["cov"])
+        cov <- (t(R) %*% R) / (n.bsb[[i]] - 1)
 
       # Compute Mahalanobis distances for the units in each group. #
 
@@ -123,25 +152,33 @@ fwdmv <- function(X, groups = NULL, alpha = 0.6, beta = 0.75, bsb = ellipse.subs
       # Store the center, covariance matrix (in compact form) and #
       # determinant for each group at this step.                  #
 
-      Center[[i]][m-M+1, ] <- center
-      Cov[[i]][m-M+1, ] <- cov[row(cov) <= col(cov)]
-      Determinant[[i]][m-M+1] <- determinant
-
+      if(monitor["cov"])
+        Cov[[i]][m-M+1, ] <- cov[row(cov) <= col(cov)]
+      if(monitor["determinant"])
+        Determinant[[i]][m-M+1] <- determinant
+      if(monitor["center"])
+        Center[[i]][m-M+1, ] <- center
     }
 
-    nearest <- apply(distances, 1, function(u) which(u == min(u)))
-    Nearest[, m-M+1] <- nearest[unassigned]
 
-    for(i in 1:n.groups) {
-      if(any(misclassified <- nearest[groups[[i]]] != i)) {
-        misclassified <- groups[[i]][misclassified]
+    if(monitor["misclassified"] || monitor["nearest"]) {
+      nearest <- apply(distances, 1, function(u) which(u == min(u)))
+      if(monitor["nearest"])
+        Nearest[, m-M+1] <- nearest[unassigned]
 
-        # store misclassified units: step, unit, nearest center #
+      for(i in 1:n.groups) {
+        if(any(misclassified <- nearest[groups[[i]]] != i)) {
+          misclassified <- groups[[i]][misclassified]
 
-        for(mis in misclassified) {
-          mc <- m
-					names(mc) <- nearest[mis]
-          Misclassified[[as.character(mis)]] <- c(Misclassified[[as.character(mis)]], mc)
+          # store misclassified units: step, unit, nearest center #
+
+          if(monitor["misclassified"]) {
+            for(mis in misclassified) {
+              mc <- m
+              names(mc) <- nearest[mis]
+              Misclassified[[as.character(mis)]] <- c(Misclassified[[as.character(mis)]], mc)
+            }
+          }
         }
       }
     }
@@ -153,19 +190,22 @@ fwdmv <- function(X, groups = NULL, alpha = 0.6, beta = 0.75, bsb = ellipse.subs
 
     sorted.distances <- sort(distances[, 1])
 
-    Max[m-M+1] <- max(distances[unlist(bsb), 1])
-    Mth[m-M+1] <- sorted.distances[m]
-
-
+    if(monitor["max"])
+      Max[m-M+1] <- max(distances[unlist(bsb), 1])
+    if(monitor["mth"])
+      Mth[m-M+1] <- sorted.distances[m]
 
     if(m < n) {
-      Min[m-M+1] <- min(distances[setdiff(1:n, unlist(bsb)), 1])
-      Mpo[m-M+1] <- sorted.distances[m+1]
+      if(monitor["min"])
+        Min[m-M+1] <- min(distances[setdiff(1:n, unlist(bsb)), 1])
+      if(monitor["mpo"])
+        Mpo[m-M+1] <- sorted.distances[m+1]
     }
 
     # Store the distances for all units. #
 
-    Distances[, m-M+1] <- distances[, 1]
+    if(monitor["distance"])
+      Distances[, m-M+1] <- distances[, 1]
 
     # Update the subsets. #
 
@@ -219,13 +259,13 @@ fwdmv <- function(X, groups = NULL, alpha = 0.6, beta = 0.75, bsb = ellipse.subs
   }
 
   ans <- list(call = the.call,
-              Distances = Distances,
-              Center = Center,
-              Cov = Cov,
-              Determinant = Determinant,
-              Unit = Unit,
-              Nearest = Nearest,
-              Misclassified = Misclassified,
+              Distances = if(monitor["distance"]) Distances else NA,
+              Center = if(monitor["center"]) Center else NA,
+              Cov = if(monitor["cov"]) Cov else NA,
+              Determinant = if(monitor["determinant"]) Determinant else NA,
+              Unit = if(monitor["unit"]) Unit else NA,
+              Nearest = if(monitor["nearest"]) Nearest else NA,
+              Misclassified = if(monitor["misclassified"]) Misclassified else NA,
               groups = groups,
               n = n,
               p = p,
@@ -237,10 +277,10 @@ fwdmv <- function(X, groups = NULL, alpha = 0.6, beta = 0.75, bsb = ellipse.subs
               unassigned = unassigned,
               scaled = scaled,
               constrained = ifelse(constrained, as.integer(beta * sum(l.groups)), FALSE),
-              Max = Max,
-              Mth = Mth,
-              Min = Min,
-              Mpo = Mpo,
+              Max = if(monitor["max"]) Max else NA,
+              Mth = if(monitor["mth"]) Mth else NA,
+              Min = if(monitor["min"]) Min else NA,
+              Mpo = if(monitor["mpo"]) Mpo else NA,
               initial = FALSE)
 
   oldClass(ans) <- "fwdmv"

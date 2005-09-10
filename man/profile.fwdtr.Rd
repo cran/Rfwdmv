@@ -6,11 +6,11 @@
  This function computes the profile loglikelihoods of transformation parameters.
 }
 \usage{
-profile.fwdtr(fitted, step.fwd = NULL, conf = 0.95, bounds = NULL, ...)
+\method{profile}{fwdtr}(fitted, step.fwd = NULL, conf = 0.95, bounds = NULL, ...)
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
-  \item{fitted}{  an object of class \code{fwdtr}.  This object can be created by function \code{fwdtr}.}
+  \item{fitted}{an object of class \code{fwdtr}.  This object can be created by function \code{fwdtr}.}
   \item{step.fwd}{an integer value.  The step of the forward search for which profile loglikelihoods must be created.  If \code{step.fwd = NULL} the profile loglikelihood is computed for the last step of the forward search.}
   \item{conf}{ scalar between 0 and 1 which defines the marginal confidence interval of lambda for each variable.  The default is 95\% confidence interval.}
   \item{bounds}{  a \code{2 x 1} numeric vector containing the lower and upper limit of the x axis for each profile loglikelihood.  The default is the value of \code{boundaries} in \code{fwdtr.object}.}

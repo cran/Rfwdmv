@@ -1,6 +1,5 @@
 bb.subset <- function(X, size) {
 
-
 bsplinex <- function(x, y)
 {
 # B-Spline helper function

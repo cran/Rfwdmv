@@ -9,7 +9,7 @@ Displays a brief summary of the forward search contained in an fwdmv object.
 }
 
 \usage{
-print.fwdmv(x, ...)
+\method{print}{fwdmv}(x, ...)
 }
 
 \arguments{

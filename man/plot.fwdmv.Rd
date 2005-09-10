@@ -9,7 +9,7 @@ This function is the generic plot method for \code{fwdmv} objects.  It allows th
 }
 
 \usage{
-plot.fwdmv(x, ...)
+\method{plot}{fwdmv}(x, ...)
 }
 
 \arguments{

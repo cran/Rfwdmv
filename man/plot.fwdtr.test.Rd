@@ -8,7 +8,7 @@ This function is the generic plot method for fwdtr.test objects.  It produces a 
 }
 
 \usage{
-plot.fwdtr.test(x, psfrag.labels = FALSE, ...)
+\method{plot}{fwdtr.test}(x, psfrag.labels = FALSE, ...)
 }
 
 \arguments{

@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXFileReference section */
+		0E5ED63F0AB5783800655B80 /* baby.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = baby.dat.txt; path = data/baby.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED6400AB5783800655B80 /* bank.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = bank.dat.txt; path = data/bank.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED6410AB5783800655B80 /* bridge.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = bridge.dat.txt; path = data/bridge.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED6420AB5783800655B80 /* diabetes.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = diabetes.dat.txt; path = data/diabetes.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED6430AB5783800655B80 /* dyestuff.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = dyestuff.dat.txt; path = data/dyestuff.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED6440AB5783800655B80 /* electrodes.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = electrodes.dat.txt; path = data/electrodes.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED6450AB5783800655B80 /* emilia.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = emilia.dat.txt; path = data/emilia.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED6460AB5783800655B80 /* fondi.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = fondi.dat.txt; path = data/fondi.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED6470AB5783800655B80 /* heads.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = heads.dat.txt; path = data/heads.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED6480AB5783800655B80 /* iris.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = iris.dat.txt; path = data/iris.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED6490AB5783800655B80 /* milk.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = milk.dat.txt; path = data/milk.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED64A0AB5783800655B80 /* ms.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = ms.dat.txt; path = data/ms.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED64B0AB5783800655B80 /* mssmall.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = mssmall.dat.txt; path = data/mssmall.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED64C0AB5783800655B80 /* mussels.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = mussels.dat.txt; path = data/mussels.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED64D0AB5783800655B80 /* quality.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = quality.dat.txt; path = data/quality.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED64E0AB5783800655B80 /* record.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = record.dat.txt; path = data/record.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED64F0AB5783800655B80 /* sixtyeighty.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = sixtyeighty.dat.txt; path = data/sixtyeighty.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED6500AB5783800655B80 /* threetwo.dat.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = threetwo.dat.txt; path = data/threetwo.dat.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED6510AB5783800655B80 /* DESCRIPTION */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = DESCRIPTION; sourceTree = SOURCE_ROOT; };
+		0E5ED6540AB5783800655B80 /* assign.groups.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = assign.groups.Rd; sourceTree = "<group>"; };
+		0E5ED6550AB5783800655B80 /* baby.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = baby.dat.Rd; sourceTree = "<group>"; };
+		0E5ED6560AB5783800655B80 /* bank.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = bank.dat.Rd; sourceTree = "<group>"; };
+		0E5ED6570AB5783800655B80 /* bb.subset.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = bb.subset.Rd; sourceTree = "<group>"; };
+		0E5ED6590AB5783800655B80 /* bridge.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = bridge.dat.Rd; sourceTree = "<group>"; };
+		0E5ED65A0AB5783800655B80 /* diabetes.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = diabetes.dat.Rd; sourceTree = "<group>"; };
+		0E5ED65B0AB5783800655B80 /* dyestuff.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = dyestuff.dat.Rd; sourceTree = "<group>"; };
+		0E5ED65C0AB5783800655B80 /* eigenvalues.fwdmv.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = eigenvalues.fwdmv.Rd; sourceTree = "<group>"; };
+		0E5ED65D0AB5783800655B80 /* eigenvectors.fwdmv.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = eigenvectors.fwdmv.Rd; sourceTree = "<group>"; };
+		0E5ED65E0AB5783800655B80 /* electrodes.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = electrodes.dat.Rd; sourceTree = "<group>"; };
+		0E5ED65F0AB5783800655B80 /* ellipse.subset.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = ellipse.subset.Rd; sourceTree = "<group>"; };
+		0E5ED6600AB5783800655B80 /* emilia.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = emilia.dat.Rd; sourceTree = "<group>"; };
+		0E5ED6610AB5783800655B80 /* fondi.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fondi.dat.Rd; sourceTree = "<group>"; };
+		0E5ED6620AB5783800655B80 /* fwdmv.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmv.Rd; sourceTree = "<group>"; };
+		0E5ED6630AB5783800655B80 /* fwdmv.init.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmv.init.Rd; sourceTree = "<group>"; };
+		0E5ED6640AB5783800655B80 /* fwdmv.object.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmv.object.Rd; sourceTree = "<group>"; };
+		0E5ED6650AB5783800655B80 /* fwdmvChangePlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvChangePlot.Rd; sourceTree = "<group>"; };
+		0E5ED6660AB5783800655B80 /* fwdmvConfirmPlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvConfirmPlot.Rd; sourceTree = "<group>"; };
+		0E5ED6670AB5783800655B80 /* fwdmvCovariancePlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvCovariancePlot.Rd; sourceTree = "<group>"; };
+		0E5ED6680AB5783800655B80 /* fwdmvDeterminantPlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvDeterminantPlot.Rd; sourceTree = "<group>"; };
+		0E5ED6690AB5783800655B80 /* fwdmvDistancePlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvDistancePlot.Rd; sourceTree = "<group>"; };
+		0E5ED66A0AB5783800655B80 /* fwdmvEccentricityPlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvEccentricityPlot.Rd; sourceTree = "<group>"; };
+		0E5ED66B0AB5783800655B80 /* fwdmvEigenvectorPlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvEigenvectorPlot.Rd; sourceTree = "<group>"; };
+		0E5ED66C0AB5783800655B80 /* fwdmvEllipsePlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvEllipsePlot.Rd; sourceTree = "<group>"; };
+		0E5ED66D0AB5783800655B80 /* fwdmvEntryPlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvEntryPlot.Rd; sourceTree = "<group>"; };
+		0E5ED66E0AB5783800655B80 /* fwdmvGapPlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvGapPlot.Rd; sourceTree = "<group>"; };
+		0E5ED66F0AB5783800655B80 /* fwdmvMinmaxPlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvMinmaxPlot.Rd; sourceTree = "<group>"; };
+		0E5ED6700AB5783800655B80 /* fwdmvPairsPlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvPairsPlot.Rd; sourceTree = "<group>"; };
+		0E5ED6710AB5783800655B80 /* fwdmvPartitionPlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvPartitionPlot.Rd; sourceTree = "<group>"; };
+		0E5ED6720AB5783800655B80 /* fwdmvPrePlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvPrePlot.Rd; sourceTree = "<group>"; };
+		0E5ED6730AB5783800655B80 /* fwdmvPrincompPlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvPrincompPlot.Rd; sourceTree = "<group>"; };
+		0E5ED6740AB5783800655B80 /* fwdmvQuantilePlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvQuantilePlot.Rd; sourceTree = "<group>"; };
+		0E5ED6750AB5783800655B80 /* fwdtr.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdtr.Rd; sourceTree = "<group>"; };
+		0E5ED6760AB5783800655B80 /* fwdtr.object.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdtr.object.Rd; sourceTree = "<group>"; };
+		0E5ED6770AB5783900655B80 /* fwdtr.test.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdtr.test.Rd; sourceTree = "<group>"; };
+		0E5ED6780AB5783900655B80 /* fwdtr.test.object.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdtr.test.object.Rd; sourceTree = "<group>"; };
+		0E5ED6790AB5783900655B80 /* fwdtrLrPlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdtrLrPlot.Rd; sourceTree = "<group>"; };
+		0E5ED67A0AB5783900655B80 /* fwdtrMlePlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdtrMlePlot.Rd; sourceTree = "<group>"; };
+		0E5ED67B0AB5783900655B80 /* fwdtrProfilePlot.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdtrProfilePlot.Rd; sourceTree = "<group>"; };
+		0E5ED67C0AB5783900655B80 /* heads.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = heads.dat.Rd; sourceTree = "<group>"; };
+		0E5ED67D0AB5783900655B80 /* iris.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = iris.dat.Rd; sourceTree = "<group>"; };
+		0E5ED67E0AB5783900655B80 /* mcd.subset.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = mcd.subset.Rd; sourceTree = "<group>"; };
+		0E5ED67F0AB5783900655B80 /* milk.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = milk.dat.Rd; sourceTree = "<group>"; };
+		0E5ED6800AB5783900655B80 /* ms.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = ms.dat.Rd; sourceTree = "<group>"; };
+		0E5ED6810AB5783900655B80 /* mssmall.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = mssmall.dat.Rd; sourceTree = "<group>"; };
+		0E5ED6820AB5783900655B80 /* mussels.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = mussels.dat.Rd; sourceTree = "<group>"; };
+		0E5ED6830AB5783900655B80 /* panel.bb.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = panel.bb.Rd; sourceTree = "<group>"; };
+		0E5ED6840AB5783900655B80 /* panel.be.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = panel.be.Rd; sourceTree = "<group>"; };
+		0E5ED6850AB5783900655B80 /* panel.me.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = panel.me.Rd; sourceTree = "<group>"; };
+		0E5ED6860AB5783900655B80 /* partition.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = partition.Rd; sourceTree = "<group>"; };
+		0E5ED6870AB5783900655B80 /* plot.fwdmv.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = plot.fwdmv.Rd; sourceTree = "<group>"; };
+		0E5ED6880AB5783900655B80 /* plot.fwdtr.test.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = plot.fwdtr.test.Rd; sourceTree = "<group>"; };
+		0E5ED6890AB5783900655B80 /* print.fwdmv.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = print.fwdmv.Rd; sourceTree = "<group>"; };
+		0E5ED68A0AB5783900655B80 /* profile.fwdtr.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = profile.fwdtr.Rd; sourceTree = "<group>"; };
+		0E5ED68B0AB5783900655B80 /* profile.fwdtr.object.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = profile.fwdtr.object.Rd; sourceTree = "<group>"; };
+		0E5ED68C0AB5783900655B80 /* quality.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = quality.dat.Rd; sourceTree = "<group>"; };
+		0E5ED68D0AB5783900655B80 /* record.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = record.dat.Rd; sourceTree = "<group>"; };
+		0E5ED68E0AB5783900655B80 /* sixtyeighty.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = sixtyeighty.dat.Rd; sourceTree = "<group>"; };
+		0E5ED68F0AB5783900655B80 /* threetwo.dat.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = threetwo.dat.Rd; sourceTree = "<group>"; };
+		0E5ED6910AB5783900655B80 /* assign.groups.fwdmv.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = assign.groups.fwdmv.q; sourceTree = "<group>"; };
+		0E5ED6920AB5783900655B80 /* bb.subset.fwdmv.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = bb.subset.fwdmv.q; sourceTree = "<group>"; };
+		0E5ED6940AB5783900655B80 /* eigenvalues.fwdmv.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = eigenvalues.fwdmv.q; sourceTree = "<group>"; };
+		0E5ED6950AB5783900655B80 /* eigenvectors.fwdmv.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = eigenvectors.fwdmv.q; sourceTree = "<group>"; };
+		0E5ED6960AB5783900655B80 /* ellipse.subset.fwdmv.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = ellipse.subset.fwdmv.q; sourceTree = "<group>"; };
+		0E5ED6970AB5783900655B80 /* fwdmv.init.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmv.init.q; sourceTree = "<group>"; };
+		0E5ED6990AB5783900655B80 /* fwdmv.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmv.q; sourceTree = "<group>"; };
+		0E5ED69A0AB5783900655B80 /* fwdmvChangePlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvChangePlot.q; sourceTree = "<group>"; };
+		0E5ED69B0AB5783900655B80 /* fwdmvConfirmPlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvConfirmPlot.q; sourceTree = "<group>"; };
+		0E5ED69C0AB5783900655B80 /* fwdmvCovariancePlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvCovariancePlot.q; sourceTree = "<group>"; };
+		0E5ED69D0AB5783900655B80 /* fwdmvDeterminantPlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvDeterminantPlot.q; sourceTree = "<group>"; };
+		0E5ED69E0AB5783900655B80 /* fwdmvDistancePlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvDistancePlot.q; sourceTree = "<group>"; };
+		0E5ED69F0AB5783900655B80 /* fwdmvEccentricityPlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvEccentricityPlot.q; sourceTree = "<group>"; };
+		0E5ED6A00AB5783900655B80 /* fwdmvEigenvectorPlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvEigenvectorPlot.q; sourceTree = "<group>"; };
+		0E5ED6A10AB5783900655B80 /* fwdmvEllipsePlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvEllipsePlot.q; sourceTree = "<group>"; };
+		0E5ED6A20AB5783900655B80 /* fwdmvEntryPlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvEntryPlot.q; sourceTree = "<group>"; };
+		0E5ED6A30AB5783900655B80 /* fwdmvGapPlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvGapPlot.q; sourceTree = "<group>"; };
+		0E5ED6A40AB5783900655B80 /* fwdmvMinmaxPlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvMinmaxPlot.q; sourceTree = "<group>"; };
+		0E5ED6A50AB5783900655B80 /* fwdmvPairsPlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvPairsPlot.q; sourceTree = "<group>"; };
+		0E5ED6A60AB5783900655B80 /* fwdmvPartitionPlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvPartitionPlot.q; sourceTree = "<group>"; };
+		0E5ED6A70AB5783900655B80 /* fwdmvPrePlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvPrePlot.q; sourceTree = "<group>"; };
+		0E5ED6A80AB5783900655B80 /* fwdmvPrincompPlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvPrincompPlot.q; sourceTree = "<group>"; };
+		0E5ED6A90AB5783900655B80 /* fwdmvQuantilePlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdmvQuantilePlot.q; sourceTree = "<group>"; };
+		0E5ED6AA0AB5783900655B80 /* fwdtr.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdtr.q; sourceTree = "<group>"; };
+		0E5ED6AB0AB5783900655B80 /* fwdtr.test.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdtr.test.q; sourceTree = "<group>"; };
+		0E5ED6AC0AB5783900655B80 /* fwdtrLrPlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdtrLrPlot.q; sourceTree = "<group>"; };
+		0E5ED6AD0AB5783900655B80 /* fwdtrMlePlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdtrMlePlot.q; sourceTree = "<group>"; };
+		0E5ED6AE0AB5783900655B80 /* fwdtrProfilePlot.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = fwdtrProfilePlot.q; sourceTree = "<group>"; };
+		0E5ED6AF0AB5783900655B80 /* mcd.subset.fwdmv.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = mcd.subset.fwdmv.q; sourceTree = "<group>"; };
+		0E5ED6B00AB5783900655B80 /* panel.bb.fwdmv.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = panel.bb.fwdmv.q; sourceTree = "<group>"; };
+		0E5ED6B10AB5783900655B80 /* panel.be.fwdmv.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = panel.be.fwdmv.q; sourceTree = "<group>"; };
+		0E5ED6B20AB5783900655B80 /* panel.me.fwdmv.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = panel.me.fwdmv.q; sourceTree = "<group>"; };
+		0E5ED6B30AB5783900655B80 /* partition.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = partition.q; sourceTree = "<group>"; };
+		0E5ED6B40AB5783900655B80 /* plot.fwdtr.test.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = plot.fwdtr.test.q; sourceTree = "<group>"; };
+		0E5ED6B50AB5783900655B80 /* profile.fwdtr.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = profile.fwdtr.q; sourceTree = "<group>"; };
+		0E5ED6B60AB5783900655B80 /* zzz.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = zzz.q; path = R/zzz.q; sourceTree = SOURCE_ROOT; };
+		0E5ED6B70AB5783900655B80 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = Readme.txt; sourceTree = SOURCE_ROOT; };
+		0E5ED6B80AB5783900655B80 /* source.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = source.q; sourceTree = SOURCE_ROOT; };
+		0E5ED6BA0AB5783900655B80 /* convex.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = convex.c; path = src/convex.c; sourceTree = SOURCE_ROOT; };
+		0E5ED6F50AB59D4C00655B80 /* random.subset.fwdmv.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = random.subset.fwdmv.q; sourceTree = "<group>"; };
+		0E5ED7340AB6B37800655B80 /* Rfwdmv.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Rfwdmv.h; sourceTree = "<group>"; };
+		0E5ED7350AB6B37800655B80 /* FSfwdmv.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = FSfwdmv.c; sourceTree = "<group>"; };
+		0E5ED7940AB6FA5E00655B80 /* Makevars */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = Makevars; path = src/Makevars; sourceTree = SOURCE_ROOT; };
+		0E7F1E110ABAAADE008BFE01 /* plot.fwdmv.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = plot.fwdmv.q; path = R/plot.fwdmv.q; sourceTree = SOURCE_ROOT; };
+		0E7F1E120ABAAADE008BFE01 /* print.fwdmv.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = print.fwdmv.q; path = R/print.fwdmv.q; sourceTree = SOURCE_ROOT; };
+		0E7F1E2B0ABAB0EA008BFE01 /* fwdmvRandomStart.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = fwdmvRandomStart.q; path = R/fwdmvRandomStart.q; sourceTree = SOURCE_ROOT; };
+		0E7F1E2C0ABAB0EA008BFE01 /* identify.fwdmvRandomStart.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = identify.fwdmvRandomStart.q; path = R/identify.fwdmvRandomStart.q; sourceTree = SOURCE_ROOT; };
+		0E7F1E2D0ABAB0EA008BFE01 /* plot.fwdmvRandomStart.q */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = plot.fwdmvRandomStart.q; path = R/plot.fwdmvRandomStart.q; sourceTree = SOURCE_ROOT; };
+		0E7F1E320ABAB1E1008BFE01 /* fwdmvRandomStart.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = fwdmvRandomStart.Rd; path = man/fwdmvRandomStart.Rd; sourceTree = SOURCE_ROOT; };
+		0E7F1E330ABAB1E1008BFE01 /* identify.fwdmvRandomStart.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = identify.fwdmvRandomStart.Rd; path = man/identify.fwdmvRandomStart.Rd; sourceTree = SOURCE_ROOT; };
+		0E7F1E340ABAB1E1008BFE01 /* plot.fwdmvRandomStart.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = plot.fwdmvRandomStart.Rd; path = man/plot.fwdmvRandomStart.Rd; sourceTree = SOURCE_ROOT; };
+		0E7F1E350ABAB220008BFE01 /* random.subset.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = random.subset.Rd; path = man/random.subset.Rd; sourceTree = SOURCE_ROOT; };
+		0E7F1EE30ABADFF5008BFE01 /* FSfwdmvRandomStart.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = FSfwdmvRandomStart.c; path = src/FSfwdmvRandomStart.c; sourceTree = SOURCE_ROOT; };
+		0EB502A30AB9A4DD00677697 /* fwdmv.init.pureR.q */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fwdmv.init.pureR.q; sourceTree = "<group>"; };
+		0EBB73540AB80A4A00F4DC6D /* dsum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dsum.c; sourceTree = "<group>"; };
+		DA2906F80AC945B000C1EFCB /* FScomputeEnvelope.q */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FScomputeEnvelope.q; sourceTree = "<group>"; };
+		DA3EE84D0AC9824100E4380E /* FScomputeEnvelope.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = FScomputeEnvelope.c; path = ../../../../../../var/automount/export/rs/konis/Documents/Projects/Rfwdmv/src/FScomputeEnvelope.c; sourceTree = SOURCE_ROOT; };
+		DA9ECBDC0ADF9BF900688677 /* FScomputeEnvelope.Rd */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = FScomputeEnvelope.Rd; path = man/FScomputeEnvelope.Rd; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0E5ED62F0AB577E300655B80 = {
+			isa = PBXGroup;
+			children = (
+				0E5ED6510AB5783800655B80 /* DESCRIPTION */,
+				0E5ED6B70AB5783900655B80 /* Readme.txt */,
+				0E5ED6900AB5783900655B80 /* R */,
+				0E5ED63E0AB5783800655B80 /* data */,
+				0E5ED6530AB5783800655B80 /* man */,
+				0E5ED6B90AB5783900655B80 /* src */,
+				0E5ED6B80AB5783900655B80 /* source.q */,
+			);
+			sourceTree = "<group>";
+		};
+		0E5ED63E0AB5783800655B80 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				0E5ED63F0AB5783800655B80 /* baby.dat.txt */,
+				0E5ED6400AB5783800655B80 /* bank.dat.txt */,
+				0E5ED6410AB5783800655B80 /* bridge.dat.txt */,
+				0E5ED6420AB5783800655B80 /* diabetes.dat.txt */,
+				0E5ED6430AB5783800655B80 /* dyestuff.dat.txt */,
+				0E5ED6440AB5783800655B80 /* electrodes.dat.txt */,
+				0E5ED6450AB5783800655B80 /* emilia.dat.txt */,
+				0E5ED6460AB5783800655B80 /* fondi.dat.txt */,
+				0E5ED6470AB5783800655B80 /* heads.dat.txt */,
+				0E5ED6480AB5783800655B80 /* iris.dat.txt */,
+				0E5ED6490AB5783800655B80 /* milk.dat.txt */,
+				0E5ED64A0AB5783800655B80 /* ms.dat.txt */,
+				0E5ED64B0AB5783800655B80 /* mssmall.dat.txt */,
+				0E5ED64C0AB5783800655B80 /* mussels.dat.txt */,
+				0E5ED64D0AB5783800655B80 /* quality.dat.txt */,
+				0E5ED64E0AB5783800655B80 /* record.dat.txt */,
+				0E5ED64F0AB5783800655B80 /* sixtyeighty.dat.txt */,
+				0E5ED6500AB5783800655B80 /* threetwo.dat.txt */,
+			);
+			path = data;
+			sourceTree = SOURCE_ROOT;
+		};
+		0E5ED6530AB5783800655B80 /* man */ = {
+			isa = PBXGroup;
+			children = (
+				0E7F1E1F0ABAAD6E008BFE01 /* fwdmv */,
+				0E7F1E1D0ABAAD57008BFE01 /* fwdmv subsets */,
+				0E7F1E210ABAAD82008BFE01 /* fwdmv random starts */,
+				0E7F1E1E0ABAAD62008BFE01 /* fwdmv methods */,
+				0E7F1E1B0ABAACAB008BFE01 /* fwdmv plots */,
+				0E7F1E220ABAAD8C008BFE01 /* fwdmv partition */,
+				0E7F1E200ABAAD79008BFE01 /* fwdtr */,
+				0E7F1E1C0ABAAD21008BFE01 /* data */,
+			);
+			path = man;
+			sourceTree = SOURCE_ROOT;
+		};
+		0E5ED6900AB5783900655B80 /* R */ = {
+			isa = PBXGroup;
+			children = (
+				0E7F1DDB0ABAA7D6008BFE01 /* fwdmv */,
+				0E7F1DD90ABAA76A008BFE01 /* fwdmv subsets */,
+				0E7F1DF80ABAA869008BFE01 /* fwdmv random starts */,
+				0E7F1DDA0ABAA7AF008BFE01 /* fwdmv methods */,
+				0E7F1DD80ABAA735008BFE01 /* fwdmv plots */,
+				0E7F1E100ABAAA3F008BFE01 /* fwdmv partition */,
+				0E7F1DDC0ABAA80F008BFE01 /* fwdtr */,
+				0E5ED6B60AB5783900655B80 /* zzz.q */,
+			);
+			path = R;
+			sourceTree = SOURCE_ROOT;
+		};
+		0E5ED6B90AB5783900655B80 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				0E5ED7940AB6FA5E00655B80 /* Makevars */,
+				0E5ED7340AB6B37800655B80 /* Rfwdmv.h */,
+				0E5ED7350AB6B37800655B80 /* FSfwdmv.c */,
+				0E7F1EE30ABADFF5008BFE01 /* FSfwdmvRandomStart.c */,
+				DA3EE84D0AC9824100E4380E /* FScomputeEnvelope.c */,
+				0EBB73540AB80A4A00F4DC6D /* dsum.c */,
+				0E5ED6BA0AB5783900655B80 /* convex.c */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		0E7F1DD80ABAA735008BFE01 /* fwdmv plots */ = {
+			isa = PBXGroup;
+			children = (
+				0E5ED69A0AB5783900655B80 /* fwdmvChangePlot.q */,
+				0E5ED69B0AB5783900655B80 /* fwdmvConfirmPlot.q */,
+				0E5ED69C0AB5783900655B80 /* fwdmvCovariancePlot.q */,
+				0E5ED69D0AB5783900655B80 /* fwdmvDeterminantPlot.q */,
+				0E5ED69E0AB5783900655B80 /* fwdmvDistancePlot.q */,
+				0E5ED69F0AB5783900655B80 /* fwdmvEccentricityPlot.q */,
+				0E5ED6A00AB5783900655B80 /* fwdmvEigenvectorPlot.q */,
+				0E5ED6A10AB5783900655B80 /* fwdmvEllipsePlot.q */,
+				0E5ED6A20AB5783900655B80 /* fwdmvEntryPlot.q */,
+				0E5ED6A30AB5783900655B80 /* fwdmvGapPlot.q */,
+				0E5ED6A40AB5783900655B80 /* fwdmvMinmaxPlot.q */,
+				0E5ED6A50AB5783900655B80 /* fwdmvPairsPlot.q */,
+				0E5ED6A70AB5783900655B80 /* fwdmvPrePlot.q */,
+				0E5ED6B00AB5783900655B80 /* panel.bb.fwdmv.q */,
+				0E5ED6B10AB5783900655B80 /* panel.be.fwdmv.q */,
+				0E5ED6B20AB5783900655B80 /* panel.me.fwdmv.q */,
+				0E5ED6A80AB5783900655B80 /* fwdmvPrincompPlot.q */,
+				0E5ED6A90AB5783900655B80 /* fwdmvQuantilePlot.q */,
+			);
+			name = "fwdmv plots";
+			sourceTree = "<group>";
+		};
+		0E7F1DD90ABAA76A008BFE01 /* fwdmv subsets */ = {
+			isa = PBXGroup;
+			children = (
+				0E5ED6920AB5783900655B80 /* bb.subset.fwdmv.q */,
+				0E5ED6960AB5783900655B80 /* ellipse.subset.fwdmv.q */,
+				0E5ED6AF0AB5783900655B80 /* mcd.subset.fwdmv.q */,
+				0E5ED6F50AB59D4C00655B80 /* random.subset.fwdmv.q */,
+			);
+			name = "fwdmv subsets";
+			sourceTree = "<group>";
+		};
+		0E7F1DDA0ABAA7AF008BFE01 /* fwdmv methods */ = {
+			isa = PBXGroup;
+			children = (
+				0E5ED6910AB5783900655B80 /* assign.groups.fwdmv.q */,
+				0E5ED6940AB5783900655B80 /* eigenvalues.fwdmv.q */,
+				0E5ED6950AB5783900655B80 /* eigenvectors.fwdmv.q */,
+				0E7F1E110ABAAADE008BFE01 /* plot.fwdmv.q */,
+				0E7F1E120ABAAADE008BFE01 /* print.fwdmv.q */,
+			);
+			name = "fwdmv methods";
+			sourceTree = "<group>";
+		};
+		0E7F1DDB0ABAA7D6008BFE01 /* fwdmv */ = {
+			isa = PBXGroup;
+			children = (
+				0E5ED6990AB5783900655B80 /* fwdmv.q */,
+				0E5ED6970AB5783900655B80 /* fwdmv.init.q */,
+				0EB502A30AB9A4DD00677697 /* fwdmv.init.pureR.q */,
+			);
+			name = fwdmv;
+			sourceTree = "<group>";
+		};
+		0E7F1DDC0ABAA80F008BFE01 /* fwdtr */ = {
+			isa = PBXGroup;
+			children = (
+				0E5ED6AA0AB5783900655B80 /* fwdtr.q */,
+				0E5ED6AB0AB5783900655B80 /* fwdtr.test.q */,
+				0E5ED6AC0AB5783900655B80 /* fwdtrLrPlot.q */,
+				0E5ED6AD0AB5783900655B80 /* fwdtrMlePlot.q */,
+				0E5ED6AE0AB5783900655B80 /* fwdtrProfilePlot.q */,
+				0E5ED6B40AB5783900655B80 /* plot.fwdtr.test.q */,
+				0E5ED6B50AB5783900655B80 /* profile.fwdtr.q */,
+			);
+			name = fwdtr;
+			sourceTree = "<group>";
+		};
+		0E7F1DF80ABAA869008BFE01 /* fwdmv random starts */ = {
+			isa = PBXGroup;
+			children = (
+				0E7F1E2B0ABAB0EA008BFE01 /* fwdmvRandomStart.q */,
+				0E7F1E2C0ABAB0EA008BFE01 /* identify.fwdmvRandomStart.q */,
+				0E7F1E2D0ABAB0EA008BFE01 /* plot.fwdmvRandomStart.q */,
+				DA2906F80AC945B000C1EFCB /* FScomputeEnvelope.q */,
+			);
+			name = "fwdmv random starts";
+			sourceTree = "<group>";
+		};
+		0E7F1E100ABAAA3F008BFE01 /* fwdmv partition */ = {
+			isa = PBXGroup;
+			children = (
+				0E5ED6B30AB5783900655B80 /* partition.q */,
+				0E5ED6A60AB5783900655B80 /* fwdmvPartitionPlot.q */,
+			);
+			name = "fwdmv partition";
+			sourceTree = "<group>";
+		};
+		0E7F1E1B0ABAACAB008BFE01 /* fwdmv plots */ = {
+			isa = PBXGroup;
+			children = (
+				0E5ED6650AB5783800655B80 /* fwdmvChangePlot.Rd */,
+				0E5ED6660AB5783800655B80 /* fwdmvConfirmPlot.Rd */,
+				0E5ED6670AB5783800655B80 /* fwdmvCovariancePlot.Rd */,
+				0E5ED6680AB5783800655B80 /* fwdmvDeterminantPlot.Rd */,
+				0E5ED6690AB5783800655B80 /* fwdmvDistancePlot.Rd */,
+				0E5ED66A0AB5783800655B80 /* fwdmvEccentricityPlot.Rd */,
+				0E5ED66B0AB5783800655B80 /* fwdmvEigenvectorPlot.Rd */,
+				0E5ED66C0AB5783800655B80 /* fwdmvEllipsePlot.Rd */,
+				0E5ED66D0AB5783800655B80 /* fwdmvEntryPlot.Rd */,
+				0E5ED66E0AB5783800655B80 /* fwdmvGapPlot.Rd */,
+				0E5ED66F0AB5783800655B80 /* fwdmvMinmaxPlot.Rd */,
+				0E5ED6700AB5783800655B80 /* fwdmvPairsPlot.Rd */,
+				0E5ED6720AB5783800655B80 /* fwdmvPrePlot.Rd */,
+				0E5ED6830AB5783900655B80 /* panel.bb.Rd */,
+				0E5ED6840AB5783900655B80 /* panel.be.Rd */,
+				0E5ED6850AB5783900655B80 /* panel.me.Rd */,
+				0E5ED6730AB5783800655B80 /* fwdmvPrincompPlot.Rd */,
+				0E5ED6740AB5783800655B80 /* fwdmvQuantilePlot.Rd */,
+			);
+			name = "fwdmv plots";
+			sourceTree = "<group>";
+		};
+		0E7F1E1C0ABAAD21008BFE01 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				0E5ED6550AB5783800655B80 /* baby.dat.Rd */,
+				0E5ED6560AB5783800655B80 /* bank.dat.Rd */,
+				0E5ED6590AB5783800655B80 /* bridge.dat.Rd */,
+				0E5ED65A0AB5783800655B80 /* diabetes.dat.Rd */,
+				0E5ED65B0AB5783800655B80 /* dyestuff.dat.Rd */,
+				0E5ED65E0AB5783800655B80 /* electrodes.dat.Rd */,
+				0E5ED6600AB5783800655B80 /* emilia.dat.Rd */,
+				0E5ED6610AB5783800655B80 /* fondi.dat.Rd */,
+				0E5ED67C0AB5783900655B80 /* heads.dat.Rd */,
+				0E5ED67D0AB5783900655B80 /* iris.dat.Rd */,
+				0E5ED67F0AB5783900655B80 /* milk.dat.Rd */,
+				0E5ED6800AB5783900655B80 /* ms.dat.Rd */,
+				0E5ED6810AB5783900655B80 /* mssmall.dat.Rd */,
+				0E5ED6820AB5783900655B80 /* mussels.dat.Rd */,
+				0E5ED68C0AB5783900655B80 /* quality.dat.Rd */,
+				0E5ED68D0AB5783900655B80 /* record.dat.Rd */,
+				0E5ED68E0AB5783900655B80 /* sixtyeighty.dat.Rd */,
+				0E5ED68F0AB5783900655B80 /* threetwo.dat.Rd */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		0E7F1E1D0ABAAD57008BFE01 /* fwdmv subsets */ = {
+			isa = PBXGroup;
+			children = (
+				0E5ED6570AB5783800655B80 /* bb.subset.Rd */,
+				0E5ED65F0AB5783800655B80 /* ellipse.subset.Rd */,
+				0E5ED67E0AB5783900655B80 /* mcd.subset.Rd */,
+				0E7F1E350ABAB220008BFE01 /* random.subset.Rd */,
+			);
+			name = "fwdmv subsets";
+			sourceTree = "<group>";
+		};
+		0E7F1E1E0ABAAD62008BFE01 /* fwdmv methods */ = {
+			isa = PBXGroup;
+			children = (
+				0E5ED6540AB5783800655B80 /* assign.groups.Rd */,
+				0E5ED65C0AB5783800655B80 /* eigenvalues.fwdmv.Rd */,
+				0E5ED65D0AB5783800655B80 /* eigenvectors.fwdmv.Rd */,
+				0E5ED6870AB5783900655B80 /* plot.fwdmv.Rd */,
+				0E5ED6890AB5783900655B80 /* print.fwdmv.Rd */,
+			);
+			name = "fwdmv methods";
+			sourceTree = "<group>";
+		};
+		0E7F1E1F0ABAAD6E008BFE01 /* fwdmv */ = {
+			isa = PBXGroup;
+			children = (
+				0E5ED6620AB5783800655B80 /* fwdmv.Rd */,
+				0E5ED6630AB5783800655B80 /* fwdmv.init.Rd */,
+				0E5ED6640AB5783800655B80 /* fwdmv.object.Rd */,
+			);
+			name = fwdmv;
+			sourceTree = "<group>";
+		};
+		0E7F1E200ABAAD79008BFE01 /* fwdtr */ = {
+			isa = PBXGroup;
+			children = (
+				0E5ED6750AB5783800655B80 /* fwdtr.Rd */,
+				0E5ED6760AB5783800655B80 /* fwdtr.object.Rd */,
+				0E5ED6770AB5783900655B80 /* fwdtr.test.Rd */,
+				0E5ED6780AB5783900655B80 /* fwdtr.test.object.Rd */,
+				0E5ED6790AB5783900655B80 /* fwdtrLrPlot.Rd */,
+				0E5ED67A0AB5783900655B80 /* fwdtrMlePlot.Rd */,
+				0E5ED67B0AB5783900655B80 /* fwdtrProfilePlot.Rd */,
+				0E5ED6880AB5783900655B80 /* plot.fwdtr.test.Rd */,
+				0E5ED68A0AB5783900655B80 /* profile.fwdtr.Rd */,
+				0E5ED68B0AB5783900655B80 /* profile.fwdtr.object.Rd */,
+			);
+			name = fwdtr;
+			sourceTree = "<group>";
+		};
+		0E7F1E210ABAAD82008BFE01 /* fwdmv random starts */ = {
+			isa = PBXGroup;
+			children = (
+				0E7F1E320ABAB1E1008BFE01 /* fwdmvRandomStart.Rd */,
+				0E7F1E330ABAB1E1008BFE01 /* identify.fwdmvRandomStart.Rd */,
+				0E7F1E340ABAB1E1008BFE01 /* plot.fwdmvRandomStart.Rd */,
+				DA9ECBDC0ADF9BF900688677 /* FScomputeEnvelope.Rd */,
+			);
+			name = "fwdmv random starts";
+			sourceTree = "<group>";
+		};
+		0E7F1E220ABAAD8C008BFE01 /* fwdmv partition */ = {
+			isa = PBXGroup;
+			children = (
+				0E5ED6860AB5783900655B80 /* partition.Rd */,
+				0E5ED6710AB5783800655B80 /* fwdmvPartitionPlot.Rd */,
+			);
+			name = "fwdmv partition";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		0E5ED6310AB577E300655B80 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 0E5ED6320AB577E300655B80 /* Build configuration list for PBXProject "Rfwdmv" */;
+			hasScannedForEncodings = 0;
+			mainGroup = 0E5ED62F0AB577E300655B80;
+			projectDirPath = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		0E5ED6330AB577E300655B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		0E5ED6340AB577E300655B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E5ED6320AB577E300655B80 /* Build configuration list for PBXProject "Rfwdmv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E5ED6330AB577E300655B80 /* Debug */,
+				0E5ED6340AB577E300655B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E5ED6310AB577E300655B80 /* Project object */;
+}

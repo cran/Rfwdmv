@@ -4,11 +4,11 @@
 \title{Multivariate Forward Search}
 
 \description{
-This function computes a multivariate forward search.  Several diagnostic statistics are monitored during the search: see \code{fwdmv.object}.
+This function computes a multivariate forward search.  Several diagnostic statistics are monitored during the search: see \code{\link{fwdmv.object}}.
 }
 
 \usage{
-fwdmv(X, groups = NULL, alpha = 0.6, beta = 0.75, bsb = ellipse.subset, balanced = TRUE, scaled = TRUE, constrained = TRUE)
+fwdmv(X, groups = NULL, alpha = 0.6, beta = 0.75, bsb = ellipse.subset, balanced = TRUE, scaled = TRUE, constrained = TRUE, monitor = "all")
 }
 
 \arguments{
@@ -16,15 +16,11 @@ fwdmv(X, groups = NULL, alpha = 0.6, beta = 0.75, bsb = ellipse.subset, balanced
   \item{groups}{a list of one or more integer vectors specifying the tentative groups.  All elements must be unique.  Units not belonging to any group are classified as unassigned.  If omitted, all of the data are assumed to come from a single multivariate normal population.}
   \item{alpha}{a numeric value between 0 and 1 specifying the fraction of the units in each group that will be included in the initial subset.}
   \item{beta}{a numeric value between \code{alpha} and 1 specifying the fraction of the units in each tentative group that must be included in the subset before the unassigned units are allowed to be included.  A large value of \code{beta} insures that the centroid and variance-covariance matrix estimates stabilize before the unassigned units enter the subsets.}
-  \item{bsb}{a function of two variables: the multivariate data in matrix form \code{X} 
-    and the number of units in the initial subset \code{size}. 
-    If bsb= bb.subset the initial susbet is found using robust bivariate boxplots. The default is to 
-    use robustly centered ellipses  \code{ellipse.subset}.
-    Alternatively, the initial subset my be specified directly by providing an integer vector 
-    containing the indices of the units to be in the initial subset.}
+  \item{bsb}{a function of two variables: the multivariate data in matrix form \code{X} and the number of units in the initial subset \code{size}.  The default \code{bsb = ellipse.subset} computes the initial subset using robustly centered ellipses.  Other choices include \code{bsb = bb.subset} to compute the initial subset using bivariate boxplots, \code{bsb = mcd.subset} to compute the initial subset using mcd distances, and \code{bsb = random.subset} for a randomly determined initial subset.  Alternatively, the initial subset my be specified directly by providing an integer vector containing the indices of the units to be in the initial subset.}
   \item{balanced}{a logical value.  If \code{TRUE} then units are added to the subset so that the group ratios in the subset stay as close as possible to the group ratio in the data.}
   \item{scaled}{a logical value.  If \code{TRUE} then the Mahalanobis distances are scaled using the 2p root of the determinant.  This is intended to compensate for clusters with significantly different dispersions.}
   \item{constrained}{a logical value.  If TRUE then the forward search chooses units from the tentative groups until each group is \code{beta} full; then unassigned units are allowed into the subset.  If FALSE then unassigned units may enter the subset at anytime during the forward search.  Note that when \code{constrained == F}, the argument \code{balanced} is ignored.}
+  \item{monitor}{a character vector specifying which statistics are to be monitored during the forward search.  The default value "all" monitors all statistics.  Otherwise choose from "distance", "center", "cov", "determinant", "unit", "max", "mth", "min", "mpo", "nearest", and "misclassified".}
 }
 
 \details{

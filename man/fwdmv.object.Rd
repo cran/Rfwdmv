@@ -17,7 +17,7 @@ An object containing a fitted forward search on multivariate data.  The class at
     \item{Center}{a list of numeric matrices containing the location estimates for each group computed during the forward search.}
     \item{Cov}{a list of numeric matrices containing the covariance matrix estimates (in packed storage) for each group computed during the forward seach).}
     \item{Determinant}{a list of numeric vectors containing the determinants of the covariance matrix estimates for each group computed during the forward search.}
-    \item{Unit}{a list of lists of integer vectors containing the subsets during each step of the forward search.}
+    \item{Unit}{a matrix with one row for each unit in the data set and one column for each step in the forward search.  The (i,j) element is 1 if unit i is in the subset during step j of the forward search and is 0 otherwise.}
     \item{groups}{a list of integer vectors containing the user specified tentative groups.}
     \item{n}{an integer, the number of units in the data.}
     \item{p}{an integer, the number of variables in the data.}
@@ -72,7 +72,6 @@ Class \code{fwdmv} objects are created by the functions \code{\link{fwdmv}}, \co
   Accessor methods:
 
   \describe{
-    \item{\code{\link{bigunit.fwdmv}}}{subsets represented as a logical matrix.}
     \item{\code{\link{eigenvalues.fwdmv}}}{the eigenvalues of the covariance matrix estimates computed during the forward search.}
     \item{\code{\link{eigenvectors.fwdmv}}}{the eigenvectors of the covariance matrix estimates computed during the forward search.}
   }

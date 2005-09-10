@@ -9,7 +9,6 @@ fwdmvQuantilePlot <- function(x, subset.size, probs = "default", page = 1)
   constrained <- x$constrained
   Distances <- x$Distances
 
-
   ans <- list()
 
   if(constrained < m)
@@ -18,7 +17,7 @@ fwdmvQuantilePlot <- function(x, subset.size, probs = "default", page = 1)
   M <- m:n
   step <- which(M == subset.size)
 
-  distances <- Distances[unlist(x$Unit[[step]]), ]
+  distances <- Distances[as.logical(x$Unit[, step]), ]
 
   quan <- apply(distances, 2, quantile, probs = probs)
 
@@ -31,7 +30,7 @@ fwdmvQuantilePlot <- function(x, subset.size, probs = "default", page = 1)
 
   units <- list()
   for(i in 1:5)
-    units[[i]] <- setdiff(unlist(x$Unit[[step+i]]), unlist(x$Unit[[step+i-1]]))
+    units[[i]] <- which(as.logical(x$Unit[, step+i]) + as.logical(x$Unit[, step+i-1]) == 1)
   
   y.limit <- c(0.0, max(c(Distances[unlist(units), ]), distances))
 

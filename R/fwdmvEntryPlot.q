@@ -32,13 +32,23 @@ fwdmvEntryPlot <- function(x, entry.order = "first", subset.size = -1, psfrag.la
   entry.order <- switch(entry.order,
 
     "first" = {
-      unique(unlist(x$Unit))
+      j <- 1
+      units <- numeric(0)
+      while(length(units) < n) {
+        units <- unique(c(units, which(x$Unit[ , j] > 0)))
+        j <- j + 1
+      }
+      units
     },
 
     "final" = {
-      units <- unlist(x$Unit)
-      units <- units[length(units):1]
-      unique(units)[n:1]
+      j <- 1
+      units <- numeric(0)
+      while(length(units) < n) {
+        units <- unique(c(which(x$Unit[ , j] > 0), units))
+        j <- j + 1
+      }
+      units
     },
     
     "natural" = {
@@ -64,14 +74,14 @@ fwdmvEntryPlot <- function(x, entry.order = "first", subset.size = -1, psfrag.la
 		counts <- sapply(groups, length)
 		cscounts <- cumsum(counts)
 		bigunit <- matrix(0, n + n.groups, n - m + 1)
-		bigunit[-(cscounts + 1:n.groups), ] <- bigunit.fwdmv(x)[entry.order, ]
+		bigunit[-(cscounts + 1:n.groups), ] <- x$Unit[entry.order, , drop = FALSE]
 		group.id <- rep(0:n.groups + 1, times = (c(counts, n.unassigned) + 1))
 		group.id <- group.id[-length(group.id)]
 		bigunit <- bigunit * group.id
 
 		image(x = M,
 					y = 1:(n + n.groups),
-					z	= t(bigunit),
+					z	= bigunit,
 					zlim = c(0, n.groups + 1),
 					col = plot.colors[1:(n.groups + 2)],
 					xlab = x.label,
@@ -95,7 +105,8 @@ fwdmvEntryPlot <- function(x, entry.order = "first", subset.size = -1, psfrag.la
   }
 
   else {
-		bigunit <- bigunit.fwdmv(x)[entry.order, ]
+
+		bigunit <- x$Unit[entry.order, , drop = FALSE]
 		
 		image(x = M,
 					y = 1:n,
