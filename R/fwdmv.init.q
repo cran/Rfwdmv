@@ -8,7 +8,7 @@ fwdmv.init <- function(X, bsb = ellipse.subset, n.bsb, scaled = TRUE, monitor = 
   names(monitor) <- c("distance", "center", "cov", "determinant",
                       "unit", "max", "mth", "min", "mpo")
 
-  if(casefold(monitor.arg) == "all")
+  if(casefold(monitor.arg[1]) == "all")
     monitor[1:9] <- TRUE
 
   else
